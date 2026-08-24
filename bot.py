@@ -2,7 +2,7 @@ import os
 import time
 import requests
 
-BOT_TOKEN = os.environ["BOT_TOKEN"]
+BOT_TOKEN =8091102984:AAGuba8Y2JbZvnehwGKF3k4Pfs1RxK-WFk0
 CHANNEL = "@solanaalertprice"
 
 def get_sol_price():
