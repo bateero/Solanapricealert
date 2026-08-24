@@ -1,0 +1,27 @@
+name: SOL Price Update
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Send SOL update
+        env:
+          BOT_TOKEN: 8091102984:AAGuba8Y2JbZvnehwGKF3k4Pfs1RxK-WFk0
+        run: python bot.py
