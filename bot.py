@@ -57,15 +57,6 @@ def main():
 
 💰 <b>SOL:</b> ${price:,.2f}
 
-{emoji} <b>24H:</b> {change:+.2f}%
-
-🔺 <b>24H High:</b> ${high:,.2f}
-🔻 <b>24H Low:</b> ${low:,.2f}
-
-💎 <b>Market Cap:</b> ${market_cap / 1_000_000_000:.2f}B
-📊 <b>24H Volume:</b> ${volume / 1_000_000_000:.2f}B
-
-🕐 <b>Updated:</b> {updated}
 
 ⚡ @solanaalertprice
 """
